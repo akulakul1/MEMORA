@@ -1,0 +1,111 @@
+# Memora Configuration File
+# Customize processing behavior without changing code
+
+[whisper]
+# Whisper model size: tiny, base, small, medium, large
+model_size = base
+
+# Device: cuda, cpu, or auto (automatically detect)
+device = auto
+
+# Language code (None for auto-detection): en, es, fr, de, etc.
+language = None
+
+[diarization]
+# Enable speaker diarization
+enabled = true
+
+# Minimum number of speakers (None for auto-detection)
+min_speakers = None
+
+# Maximum number of speakers (None for auto-detection)
+max_speakers = None
+
+[keywords]
+# Number of keywords to extract per method
+top_n = 10
+
+# KeyBERT diversity (0.0 to 1.0, higher = more diverse)
+diversity = 0.5
+
+# Minimum phrase length for noun phrases
+min_phrase_length = 3
+
+[summarization]
+# Number of sentences in summary
+sentences_count = 3
+
+# Summarization method: lsa, textrank, lexrank
+method = textrank
+
+# Create bullet points
+create_bullets = true
+
+# Number of bullet points
+num_bullets = 5
+
+[llm]
+# LLM provider: anthropic, openai
+provider = anthropic
+
+# Model name (None for default)
+# Anthropic: claude-sonnet-4-20250514, claude-opus-4-20250514
+# OpenAI: gpt-4-turbo-preview, gpt-3.5-turbo
+model = None
+
+# Maximum tokens for LLM response
+max_tokens = 1000
+
+# Enable LLM processing
+enabled = true
+
+[output]
+# Output directory for results
+directory = ./output
+
+# Save complete results
+save_complete = true
+
+# Save memory summary
+save_memory = true
+
+# Save individual components
+save_transcription = false
+save_keywords = false
+save_summary = false
+
+# Pretty print JSON (larger files but readable)
+pretty_json = true
+
+[processing]
+# Show progress bars
+show_progress = true
+
+# Verbose output
+verbose = true
+
+# Number of parallel workers (for batch processing)
+num_workers = 1
+
+[firebase]
+# Enable Firebase upload
+enabled = false
+
+# Firebase collection name
+collection = memories
+
+# Firebase credentials path
+credentials_path = None
+
+[reminders]
+# Enable reminder generation
+enabled = true
+
+# Reminder types: daily, weekly, specific
+default_type = daily
+
+# Include action items in reminders
+include_actions = true
+
+# Include people in reminders
+include_people = true

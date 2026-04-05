@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416413700507",
+    "project_id": "memoryapp-c5309",
+    "storage_bucket": "memoryapp-c5309.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416413700507:android:7747e355bc3aebc639913e",
+        "android_client_info": {
+          "package_name": "com.example.memory_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

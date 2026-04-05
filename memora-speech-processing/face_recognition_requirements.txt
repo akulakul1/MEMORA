@@ -1,0 +1,20 @@
+# Memora Face Recognition — Python dependencies
+# Install with:
+#   pip install -r face_recognition_requirements.txt
+#
+# NOTE: face_recognition requires cmake + dlib.
+# On Windows: pip install cmake, then pip install dlib, then pip install face_recognition
+# On Ubuntu:  sudo apt-get install cmake libopenblas-dev liblapack-dev
+# On Raspberry Pi: same as Ubuntu (runs well on Pi 4)
+
+face_recognition==1.3.0
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+firebase-admin>=6.0.0
+pillow>=10.0.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+
+# Start the server:
+# uvicorn face_recognition_api:app --host 0.0.0.0 --port 8001 --reload

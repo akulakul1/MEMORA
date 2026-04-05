@@ -1,0 +1,15 @@
+{
+  "venvPath": ".",
+  "venv": "memora_env",
+  "pythonVersion": "3.11",
+  "pythonPlatform": "Windows",
+  "typeCheckingMode": "off",
+  "extraPaths": [
+    "."
+  ],
+  "exclude": [
+    "memora_env",
+    "llama_env",
+    "offload_folder"
+  ]
+}

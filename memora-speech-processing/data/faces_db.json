@@ -1,0 +1,87 @@
+{
+  "6b55eb4f-82f6-462b-9939-879f3a2a988e": {
+    "name": "Arya",
+    "relation": "Mother",
+    "photoUrl": "/data/users/6b55eb4f-82f6-462b-9939-879f3a2a988e/profile.jpg",
+    "isUnnamed": false,
+    "userId": null,
+    "createdAt": "2026-03-10T18:20:24.440176+00:00",
+    "lastSeenAt": "2026-03-16T09:52:07.288224+00:00",
+    "lastSeenDevice": "esp32-cam"
+  },
+  "unknown_fec82f78": {
+    "name": "Amal",
+    "relation": "friend",
+    "photoUrl": "/data/users/unknown_fec82f78/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-10T18:42:47.383428+00:00",
+    "capturedByDevice": "flutter-app",
+    "createdAt": "2026-03-10T18:42:47.383428+00:00",
+    "lastSeenAt": "2026-03-16T05:00:34.607148+00:00",
+    "lastSeenDevice": "esp32-cam"
+  },
+  "unknown_2db75c81": {
+    "name": "Obama",
+    "relation": "",
+    "photoUrl": "/data/users/unknown_2db75c81/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-10T19:31:07.031936+00:00",
+    "capturedByDevice": "flutter-app",
+    "createdAt": "2026-03-10T19:31:07.031936+00:00",
+    "lastSeenAt": "2026-03-10T19:31:07.031936+00:00"
+  },
+  "unknown_f23b3b9d": {
+    "name": "Akul",
+    "relation": "God",
+    "photoUrl": "/data/users/unknown_f23b3b9d/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-12T12:22:35.440230+00:00",
+    "capturedByDevice": "flutter-app",
+    "createdAt": "2026-03-12T12:22:35.440230+00:00",
+    "lastSeenAt": "2026-04-05T14:59:25.911036+00:00",
+    "lastSeenDevice": "esp32-cam"
+  },
+  "unknown_1846604c": {
+    "name": "christin",
+    "relation": "",
+    "photoUrl": "/data/users/unknown_1846604c/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-12T12:55:01.476879+00:00",
+    "capturedByDevice": "flutter-app",
+    "createdAt": "2026-03-12T12:55:01.476879+00:00",
+    "lastSeenAt": "2026-04-05T15:09:58.153685+00:00",
+    "lastSeenDevice": "esp32-cam"
+  },
+  "unknown_f95e66b4": {
+    "name": "Sandeep",
+    "relation": "",
+    "photoUrl": "/data/users/unknown_f95e66b4/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-14T06:33:59.477317+00:00",
+    "capturedByDevice": "flutter-app",
+    "createdAt": "2026-03-14T06:33:59.477317+00:00",
+    "lastSeenAt": "2026-03-14T09:45:02.852287+00:00",
+    "lastSeenDevice": "flutter-app"
+  },
+  "unknown_e8a6478d": {
+    "name": "Pooja",
+    "relation": "",
+    "photoUrl": "/data/users/unknown_e8a6478d/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-16T05:02:30.345634+00:00",
+    "capturedByDevice": "esp32-cam",
+    "createdAt": "2026-03-16T05:02:30.345634+00:00",
+    "lastSeenAt": "2026-03-16T09:50:58.928132+00:00",
+    "lastSeenDevice": "esp32-cam"
+  },
+  "unknown_686313e4": {
+    "name": "Dia",
+    "relation": "",
+    "photoUrl": "/data/users/unknown_686313e4/profile.jpg",
+    "isUnnamed": false,
+    "capturedAt": "2026-03-16T09:09:45.138530+00:00",
+    "capturedByDevice": "esp32-cam",
+    "createdAt": "2026-03-16T09:09:45.138530+00:00",
+    "lastSeenAt": "2026-03-16T09:09:45.138530+00:00"
+  }
+}

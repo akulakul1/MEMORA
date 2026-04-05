@@ -1,0 +1,10 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "python.defaultInterpreterPath": "C:/Users/VIJAY/miniconda3/python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "C:/Users/VIJAY/miniconda3/Lib/site-packages",
+        "C:/Users/VIJAY/Downloads/MemIot/memora-speech-processing"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}

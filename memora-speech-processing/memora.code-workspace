@@ -1,0 +1,161 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/memora_env/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/.pytest_cache": true,
+      "**/memora_env": false
+    },
+    "files.watcherExclude": {
+      "**/memora_env/**": true,
+      "**/__pycache__/**": true
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "[python]": {
+      "editor.rulers": [88],
+      "editor.tabSize": 4
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "terminal.integrated.env.linux": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.osx": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter",
+      "tamasfe.even-better-toml",
+      "redhat.vscode-yaml",
+      "eamodio.gitlens"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Memora Pipeline",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/memora_pipeline.py",
+        "console": "integratedTerminal",
+        "args": [
+          "sample_audio.mp3",
+          "--output",
+          "output"
+        ],
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Test Installation",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/test_installation.py",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Speech Processor Only",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/speech_processor.py",
+        "console": "integratedTerminal",
+        "args": [
+          "sample_audio.mp3"
+        ],
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Keyword Extractor Test",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/keyword_extractor.py",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Summarizer Test",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/summarizer.py",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "LLM Processor Test",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/llm_processor.py",
+        "console": "integratedTerminal",
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Install Dependencies",
+        "type": "shell",
+        "command": "./install.sh",
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "Test Installation",
+        "type": "shell",
+        "command": "${workspaceFolder}/memora_env/bin/python",
+        "args": ["test_installation.py"],
+        "group": "test",
+        "presentation": {
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Process Sample Audio",
+        "type": "shell",
+        "command": "${workspaceFolder}/memora_env/bin/python",
+        "args": [
+          "memora_pipeline.py",
+          "${input:audioFile}",
+          "--output",
+          "output"
+        ],
+        "group": "build",
+        "presentation": {
+          "reveal": "always"
+        }
+      }
+    ],
+    "inputs": [
+      {
+        "id": "audioFile",
+        "type": "promptString",
+        "description": "Path to audio file",
+        "default": "sample_audio.mp3"
+      }
+    ]
+  }
+}

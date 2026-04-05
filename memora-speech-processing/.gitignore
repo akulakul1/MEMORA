@@ -1,0 +1,24 @@
+# Python virtual environments
+memora_env/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDEs and Tools
+.vscode/
+.idea/
+
+# Large files and models
+*.pt
+*.safetensors
+*.bin
+offload_folder/
+memora-llama-finetuned/
+
+# Data and audio
+data/users/*/audio/*.m4a
+data/users/*/audio/*.wav
+data/users/*/audio/*.json
+data/users/*/profile.jpg
